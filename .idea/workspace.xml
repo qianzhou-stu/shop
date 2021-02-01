@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9d425bb3-bce0-45cf-95cb-f2884ebbc727" name="Default Changelist" comment="finished admin  function">
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/AdminProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/query/ProductListQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/AddProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/ListProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/UpdateProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/serviceImp/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/images/210725b6-4d8a-4025-9a55-3bd4defdb728.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/ShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/ShopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/common/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/AdminFilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/AdminFilterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/ShopWebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/ShopWebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/dao/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/dao/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/exception/ShopException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/exception/ShopException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/request/AddCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/AddCategoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/request/UpdateCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/UpdateCategoryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/serviceImp/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/serviceImp/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/mappers/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/mappers/ProductMapper.xml" afterDir="false" />
+    </list>
+    <list id="a8c2f4d1-8a41-41c6-83f0-73632df060d7" name="init shop" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/AndreasZhou/shop" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="outputLevel" value="DEBUG" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1nbOUNJVKVhPpEpOCYTltGQMHdD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/shop/.gitignore&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/request/UpdateCategoryRequest.java&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/filter/AdminFilter.java&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/config/AdminFilterConfig.java&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/config/SpringFoxConfig.java&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/config/ShopWebMvcConfig.java&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/config/CachingConfig.java&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/dao/vo/CategoryVO.java&#10;D:/Project/shop/shop/src/main/java/com/andreas/shop/pojo/vo/CategoryVO.java" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.andreas.shop.serviceImp" />
+      <recent name="com.andreas.shop.dao.Vo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\shop\shop\src\main\java\com\andreas\shop\pojo" />
+      <recent name="D:\Project\shop\shop\src\main\java\com\andreas\shop\config" />
+      <recent name="D:\Project\shop\shop\src\main\resources" />
+      <recent name="D:\Project\shop\shop\src\main\java\com\andreas\shop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\shop\shop\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn verify" />
+      <command value="mvn install:install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.andreas.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.andreas.shop.ShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d425bb3-bce0-45cf-95cb-f2884ebbc727" name="Default Changelist" comment="" />
+      <changelist id="a8c2f4d1-8a41-41c6-83f0-73632df060d7" name="init shop" comment="" />
+      <created>1611655344842</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611655344842</updated>
+      <workItem from="1611655346548" duration="11429000" />
+      <workItem from="1611710605423" duration="2473000" />
+      <workItem from="1611719507414" duration="18536000" />
+      <workItem from="1611756300860" duration="1278000" />
+      <workItem from="1611795076324" duration="12052000" />
+      <workItem from="1611893929115" duration="905000" />
+      <workItem from="1611894860831" duration="118000" />
+      <workItem from="1611894998811" duration="426000" />
+      <workItem from="1611895444327" duration="3919000" />
+      <workItem from="1611899464338" duration="752000" />
+      <workItem from="1611900227667" duration="595000" />
+      <workItem from="1611900831765" duration="977000" />
+      <workItem from="1611901829182" duration="323000" />
+      <workItem from="1611902241709" duration="599000" />
+      <workItem from="1611907516755" duration="1229000" />
+      <workItem from="1611908770615" duration="3300000" />
+      <workItem from="1611927567256" duration="2268000" />
+      <workItem from="1611929914549" duration="423000" />
+      <workItem from="1611930358799" duration="1072000" />
+      <workItem from="1611931460459" duration="737000" />
+      <workItem from="1611968113097" duration="10623000" />
+      <workItem from="1611988199544" duration="1672000" />
+      <workItem from="1611989897910" duration="196000" />
+      <workItem from="1611991299476" duration="4520000" />
+      <workItem from="1612000282619" duration="10685000" />
+      <workItem from="1612014616865" duration="141000" />
+      <workItem from="1612014779207" duration="489000" />
+      <workItem from="1612015294508" duration="1920000" />
+      <workItem from="1612053207226" duration="12141000" />
+      <workItem from="1612088978088" duration="13156000" />
+      <workItem from="1612143605166" duration="4515000" />
+      <workItem from="1612149491197" duration="1602000" />
+    </task>
+    <task id="LOCAL-00001" summary="init shop">
+      <created>1611894367102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611894367102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init shop">
+      <created>1611894394308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611894394308</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init shop">
+      <created>1611897486900</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611897486900</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init .gitignore">
+      <created>1611898703347</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611898703347</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init .gitignore">
+      <created>1611909244004</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611909244004</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update CategoryController">
+      <created>1611991777785</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611991777785</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix user bug">
+      <created>1611992630253</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611992630253</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix user bug">
+      <created>1612014430180</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612014430180</updated>
+    </task>
+    <task id="LOCAL-00009" summary="“finished category”">
+      <created>1612015107693</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612015107693</updated>
+    </task>
+    <task id="LOCAL-00010" summary="finished category function">
+      <created>1612016004559</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612016004559</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Project/shop/shop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init shop" />
+    <MESSAGE value="init .gitignore" />
+    <MESSAGE value="update CategoryController" />
+    <MESSAGE value="fix user bug" />
+    <MESSAGE value="“finished category”" />
+    <MESSAGE value="finished category function" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished category function" />
+  </component>
+</project>
