@@ -31,5 +31,16 @@ public class Constant {
 
     }
 
+    public interface SaleStatus{
+        public static final int NOT_SALT = 0;//商品的下架的状态
+        public static final int SALT = 1;//商品的上架的状态
+    }
+
+    public interface Cart {
+
+        int UN_CHECKED = 0;//购物车未选中状态
+        int CHECKED = 1;//购物车选中状态
+    }
+
 
 }

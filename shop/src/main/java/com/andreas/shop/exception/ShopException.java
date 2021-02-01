@@ -65,6 +65,12 @@ public enum ShopException {
 
     NO_ID(10027,"id不存在"),
 
+    NOT_SALE(10028,"商品不存在或者未上架"),
+
+    NOT_STOCK(10029,"商品库存不足"),
+
+    ADD_FAILURE(10030,"添加商品失败"),
+
     SYSTEM_ERROR(20000,"系统异常，请从控制台或日志中查看具体错误信息"),
     ;
 
