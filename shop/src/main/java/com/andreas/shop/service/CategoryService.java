@@ -2,8 +2,8 @@ package com.andreas.shop.service;
 
 import com.andreas.shop.exception.ShopBussinessException;
 import com.andreas.shop.pojo.vo.CategoryVO;
-import com.andreas.shop.request.AddCategoryRequest;
-import com.andreas.shop.request.UpdateCategoryRequest;
+import com.andreas.shop.pojo.request.AddCategoryRequest;
+import com.andreas.shop.pojo.request.UpdateCategoryRequest;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
@@ -24,5 +24,5 @@ public interface CategoryService {
 
     PageInfo listForAdmin(Integer pageNum, Integer pageSize);
 
-    List<CategoryVO> listCategoryForCustomer();
+    List<CategoryVO> listCategoryForCustomer(Integer parentId);
 }

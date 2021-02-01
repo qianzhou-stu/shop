@@ -5,8 +5,8 @@ import com.andreas.shop.exception.ShopBussinessException;
 import com.andreas.shop.exception.ShopException;
 import com.andreas.shop.pojo.Category;
 import com.andreas.shop.pojo.vo.CategoryVO;
-import com.andreas.shop.request.AddCategoryRequest;
-import com.andreas.shop.request.UpdateCategoryRequest;
+import com.andreas.shop.pojo.request.AddCategoryRequest;
+import com.andreas.shop.pojo.request.UpdateCategoryRequest;
 import com.andreas.shop.service.CategoryService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * @Author andreaszhou
  * @ClassName CategoryServiceImpl
- * @Description TODO
+ * @Description 分类商品管理service
  * @date 2021/1/28 9:05
  * @Version 1.0
  */
@@ -91,11 +91,14 @@ public class CategoryServiceImpl implements CategoryService {
         return pageInfo;
     }
 
+    /*在这里添加了redis缓存的使用，使得我们的加载的速度变得更加的快捷和方便，减少服务器加载的压力*/
     @Override
+    /*为前端的页面添加缓存的机制，在这里我们使用缓存的机制可以减少我们访问数据库（service或者是dao层的信息）*/
+    /*同时redis缓存在实际的使用和开发的时候有十分中重要的意义和使用的价值。*/
     @Cacheable(value = "listCategoryForCustomer")
-    public List<CategoryVO> listCategoryForCustomer() {
+    public List<CategoryVO> listCategoryForCustomer(Integer parentId) {
         ArrayList<CategoryVO> categoryVOList = new ArrayList<>();
-        recursivelyFindCategories(categoryVOList, 0);
+        recursivelyFindCategories(categoryVOList, parentId);
         return categoryVOList;
     }
 

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 描述：     Admin过滤器的配置
+ * 描述：     Admin过滤器的配置--这个也是模板化的代码
  */
 @Configuration
 public class AdminFilterConfig {

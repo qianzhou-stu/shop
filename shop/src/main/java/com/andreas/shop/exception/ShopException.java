@@ -53,6 +53,18 @@ public enum ShopException {
 
     DELETE_FAILED(10021,"删除失败"),
 
+    PRODUCT_EXIST(10022,"商品不允许重名"),
+
+    MKDIR_FAILED(10023,"创建文件失败"),
+
+    UPLOAD_FAILED(10024,"上传失败"),
+
+    NO_PAGE_NUM(10025,"页面数量不存在"),
+
+    NO_PAGE_SIZE(10026,"页面大小不存在"),
+
+    NO_ID(10027,"id不存在"),
+
     SYSTEM_ERROR(20000,"系统异常，请从控制台或日志中查看具体错误信息"),
     ;
 

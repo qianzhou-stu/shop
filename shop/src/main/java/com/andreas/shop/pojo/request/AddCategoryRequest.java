@@ -1,4 +1,4 @@
-package com.andreas.shop.request;
+package com.andreas.shop.pojo.request;
 
 
 import javax.validation.constraints.Max;

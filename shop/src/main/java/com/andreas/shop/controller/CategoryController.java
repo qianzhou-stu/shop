@@ -4,8 +4,8 @@ import com.andreas.shop.common.ApiRestResponse;
 import com.andreas.shop.pojo.vo.CategoryVO;
 import com.andreas.shop.exception.ShopBussinessException;
 import com.andreas.shop.exception.ShopException;
-import com.andreas.shop.request.AddCategoryRequest;
-import com.andreas.shop.request.UpdateCategoryRequest;
+import com.andreas.shop.pojo.request.AddCategoryRequest;
+import com.andreas.shop.pojo.request.UpdateCategoryRequest;
 import com.andreas.shop.service.CategoryService;
 import com.andreas.shop.service.UserService;
 import com.github.pagehelper.PageInfo;
@@ -125,6 +125,12 @@ public class CategoryController {
     @PostMapping("admin/category/list")
     @ResponseBody
     public ApiRestResponse listCategoryForAdmin(@RequestParam("pageNum") Integer pageNum,@RequestParam("pageSize") Integer pageSize){
+        if (pageNum==null){
+            return ApiRestResponse.error(ShopException.NO_PAGE_NUM);
+        }
+        if (pageSize==null){
+            return ApiRestResponse.error(ShopException.NO_PAGE_SIZE);
+        }
         PageInfo pageInfo = categoryServiceImp.listForAdmin(pageNum, pageSize);
         return ApiRestResponse.success(pageInfo);
     }
@@ -134,7 +140,7 @@ public class CategoryController {
     @PostMapping("category/list")
     @ResponseBody
     public ApiRestResponse listCategoryForCustomer() {
-        List<CategoryVO> categoryVOS = categoryServiceImp.listCategoryForCustomer();
+        List<CategoryVO> categoryVOS = categoryServiceImp.listCategoryForCustomer(0);
         return ApiRestResponse.success(categoryVOS);
     }
 }
