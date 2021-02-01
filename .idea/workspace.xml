@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d425bb3-bce0-45cf-95cb-f2884ebbc727" name="Default Changelist" comment="finished admin  function">
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/AdminProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/query/ProductListQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/AddProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/ListProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/UpdateProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/serviceImp/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/images/210725b6-4d8a-4025-9a55-3bd4defdb728.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/ShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/ShopApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/common/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/AdminFilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/AdminFilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/ShopWebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/config/ShopWebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/dao/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/dao/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/exception/ShopException.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/exception/ShopException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/request/AddCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/AddCategoryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/request/UpdateCategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/pojo/request/UpdateCategoryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/serviceImp/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/andreas/shop/serviceImp/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/mappers/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/mappers/ProductMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9d425bb3-bce0-45cf-95cb-f2884ebbc727" name="Default Changelist" comment="finished admin  function" />
     <list id="a8c2f4d1-8a41-41c6-83f0-73632df060d7" name="init shop" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
